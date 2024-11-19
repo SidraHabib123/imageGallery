@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-img" id="mainimg">
+        <img src="" id="galleryimg">
+        <span onclick="closeImg()">X</span>
+    </div>
+    <div class="gallery">
+        <img src="images/img1.jpg" alt="img1" onclick="openImg(this.src)">
+        <img src="images/img2.jpg" alt="img2" onclick="openImg(this.src)">
+        <img src="images/img3.jpg" alt="img3" onclick="openImg(this.src)">
+        <img src="images/img4.jpg" alt="img4" onclick="openImg(this.src)">
+        <img src="images/img5.jpg" alt="img5" onclick="openImg(this.src)">
+        <img src="images/img6.jpg" alt="img6" onclick="openImg(this.src)">
+        <img src="images/img7.jpg" alt="img7" onclick="openImg(this.src)">
+        <img src="images/img8.jpg" alt="img8" onclick="openImg(this.src)">
+    </div>
+    <script>
+        var mainimg = document.getElementById("mainimg");
+        var galleryimg = document.getElementById("galleryimg");
+        function openImg(pic) {
+            mainimg.style.display = "flex";
+            galleryimg.src= pic;
+        }
+        function closeImg(){
+            mainimg.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
